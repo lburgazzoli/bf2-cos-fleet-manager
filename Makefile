@@ -215,6 +215,11 @@ run:
 	$(GO) run ./cmd/cos-fleet-manager serve --public-host-url=${PUBLIC_HOST_URL}
 .PHONY: run
 
+PUBLIC_HOST_URL ?= http://localhost:8000
+run/connectors:
+	$(GO) run ./cmd/cos-fleet-manager serve --public-host-url=${PUBLIC_HOST_URL}
+.PHONY: run
+
 # Runs the unit tests.
 #
 # Args:

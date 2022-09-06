@@ -9,4 +9,4 @@ require (
 	github.com/spf13/cobra v1.5.0
 )
 
-replace github.com/bf2fc6cc711aee1a0c2a/kas-fleet-manager => /home/luca/work/dev/bf2-kas-fleet-manager
+replace github.com/bf2fc6cc711aee1a0c2a/kas-fleet-manager => github.com/lburgazzoli/bf2-kas-fleet-manager v0.0.0-20220901165448-306250e0b3c0

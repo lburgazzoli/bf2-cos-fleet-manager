@@ -284,7 +284,7 @@ image/build: binary
 .PHONY: image/build
 
 image/build/dev: binary
-	docker --config="${DOCKER_CONFIG}" build -t "quay.io/rhoas/cos-fleet-manager:latest" .
+	docker --config="${DOCKER_CONFIG}" build -t "quay.io/lburgazzoli/kcp-cos-fm:latest" .
 .PHONY: image/build/dev
 
 # Build and push the image

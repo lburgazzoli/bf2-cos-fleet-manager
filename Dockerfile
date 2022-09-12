@@ -9,7 +9,7 @@ ADD go.sum /build
 
 WORKDIR /build
 
-RUN CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build ./cmd/cos-fleet-manager
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build ./cmd/cos-fleet-manager
 
 # final image
 FROM registry.access.redhat.com/ubi8/ubi-minimal:8.6

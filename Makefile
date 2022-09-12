@@ -287,6 +287,10 @@ image/build/dev: binary
 	docker --config="${DOCKER_CONFIG}" build -t "quay.io/lburgazzoli/kcp-cos-fm:latest" .
 .PHONY: image/build/dev
 
+image/build/ko:
+	KO_DOCKER_REPO=quay.io/lburgazzoli/kcp-cos-fm ko build --bare --sbom=none --platform=linux/amd64,linux/arm64 ./cmd/cos-fleet-manager
+.PHONY: image/build/ko
+
 # Build and push the image
 image/push: image/build
 	docker --config="${DOCKER_CONFIG}" push "$(external_image_registry)/$(image_repository):$(image_tag)"

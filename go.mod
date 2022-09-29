@@ -3,7 +3,7 @@ module github.com/bf2fc6cc711aee1a0c2a/cos-fleet-manager
 go 1.19
 
 require (
-	github.com/bf2fc6cc711aee1a0c2a/kas-fleet-manager v0.0.0-20220920111121-987e541eecbb
+	github.com/bf2fc6cc711aee1a0c2a/kas-fleet-manager v0.0.0-20220928112350-79608566c9f3
 	github.com/golang/glog v1.0.0
 	github.com/onsi/gomega v1.20.2
 	github.com/spf13/cobra v1.5.0
@@ -93,4 +93,4 @@ require (
 	sigs.k8s.io/json v0.0.0-20211208200746-9f7c6b3444d2 // indirect
 )
 
-replace github.com/bf2fc6cc711aee1a0c2a/kas-fleet-manager => github.com/lburgazzoli/bf2-kas-fleet-manager v0.0.0-20220928205217-108d39318c90
+replace github.com/bf2fc6cc711aee1a0c2a/kas-fleet-manager => ../bf2-kas-fleet-manager
